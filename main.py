@@ -1,5 +1,6 @@
 import discord
 import os
+import random
 BASE_DIR = r"C:\Users\Admin\PycharmProjects\grokisthistrue"
 token = os.path.join(BASE_DIR, "token.txt")
 
@@ -17,10 +18,32 @@ async def on_ready():
 # Posted by Andhavarapu Balu, modified by community. See post 'Timeline' for change history
 # Retrieved 2026-10-16, License - CC BY-SA 4.0
 
+
 @client.event
 async def on_message(message):
     if client.user.mentioned_in(message):
-        word = "Hello"
+        rockisthistrue = {
+            1: "idk",
+            2: "yes",
+            3: "no",
+            4: "go ask a magic 8 ball",
+            5: "error 503",
+            6: "How the fuck would i know?",
+            7: "sometimes i think about a bunch of hot buff men dominating me.",
+            8: "perhaps",
+            9: "yuh uh",
+            10: "nuh uh",
+            11: "we ARE charlie kirk",
+            12: "we ARE NOT charlie kirk",
+            13: "rilo is gay",
+            14: "kill yourself",
+            15: "i feel so sigma!!!",
+            16: "*portal radio noises*",
+            17: "i am grok",
+            18: "i need a fucking drink",
+            19: "grok",
+        }
+        word = random.choice(rockisthistrue)
         await message.channel.send(word)
 
 
