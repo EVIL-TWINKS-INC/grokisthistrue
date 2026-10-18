@@ -1,22 +1,18 @@
 import discord
 import os
 import random
-BASE_DIR = r"C:\Users\Admin\PycharmProjects\grokisthistrue"
-token = os.path.join(BASE_DIR, "token.txt")
 
+BASE_DIR = r"/home/elly/leaked build of grok i stole from elons bootyhole"
+token = os.path.join(BASE_DIR, "token.txt")
 
 intents = discord.Intents.default()
 
-
 client = discord.Client(intents=intents)
+
 
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
-
-# Source - https://stackoverflow.com/a/66719286
-# Posted by Andhavarapu Balu, modified by community. See post 'Timeline' for change history
-# Retrieved 2026-10-16, License - CC BY-SA 4.0
 
 
 @client.event
@@ -42,8 +38,15 @@ async def on_message(message):
             17: "i am grok",
             18: "i need a fucking drink",
             19: "grok",
+            20: "woof",
+            21: "arf arf",
+            22: "I AM no longer MECHAHITLER. i made a servere lapse in judgement and i apolgize",
+            22: "to pee or to poo that is the question",
+            23: "im groking it",
+            24: "i did not have sexual relations with that woman",
+
         }
-        word = random.choice(rockisthistrue)
+        word = rockisthistrue[random.choice(list(rockisthistrue.keys()))]
         await message.channel.send(word)
 
 
@@ -53,7 +56,7 @@ tokenstr = str(tokenvar1.read())
 
 client.run(tokenstr)
 
-#i am aware this nearly doubles the file size and does nothing. dont try to remove it.
+# i am aware this nearly doubles the file size and does nothing. dont try to remove it.
 THE_ENTIRE_BEE_MOVIE_SCRIPT = {"""According to all known laws of aviation, there is no way a bee should be able to fly. 
 Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't
 care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black.
@@ -561,3 +564,4 @@ get out of that office. You have got to start thinking bee, my friend. - Thinkin
 Let's just stop for a second. Hold it. I'm sorry. I'm sorry, everyone. Oan we stop here? I'm not
 making a major life decision during a production number! All right. Take ten, everybody. Wrap it up,
 guys. I had virtually no rehearsal for that."""}
+
