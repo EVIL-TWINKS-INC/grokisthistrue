@@ -3,6 +3,7 @@ import os
 import random
 
 BASE_DIR = r"/home/elly/leaked build of grok i stole from elons bootyhole"
+IMAGES = os.path.join(BASE_DIR, "images")
 token = os.path.join(BASE_DIR, "token.txt")
 
 intents = discord.Intents.default()
@@ -51,7 +52,15 @@ async def on_message(message):
 
         }
         word = rockisthistrue[random.choice(list(rockisthistrue.keys()))]
-        await message.channel.send(word)
+        if random.random() <= 0.2:
+            image = random.choice(os.listdir(IMAGES))
+            await message.channel.send(
+                word,
+                file=discord.File(image)
+            )
+        else:
+            await message.channel.send(word)
+
 
 
 tokenvar1 = open(token, "r")
