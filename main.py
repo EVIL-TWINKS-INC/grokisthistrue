@@ -52,8 +52,9 @@ async def on_message(message):
 
         }
         word = rockisthistrue[random.choice(list(rockisthistrue.keys()))]
+        image = random.choice(os.listdir(IMAGES))
+        image = os.path.join(IMAGES, image)
         if random.random() <= 0.2:
-            image = random.choice(os.listdir(IMAGES))
             await message.channel.send(
                 word,
                 file=discord.File(image)
