@@ -3,12 +3,10 @@ import os
 import random
 
 BASE_DIR = r"/home/elly/leaked build of grok i stole from elons bootyhole"
-IMAGES = os.path.join(BASE_DIR, "images")
+
 token = os.path.join(BASE_DIR, "token.txt")
 
-GOSSIP = [
-    "gossip"
-]
+
 
 rockisthistrue = {
     # I don't know / maybe
@@ -16,6 +14,8 @@ rockisthistrue = {
     "Perhaps...",
     "Maybe.",
     "Maybe, I don't know. I kinda like to take things slow.",
+    "Who gives a shit?",
+    "Ask again later",
 
     # Yes
     "Yes!",
@@ -33,6 +33,7 @@ rockisthistrue = {
     "Nah!",
     "nuh uh",
     "No, but I like your style!",
+    "Your right to push back on that",
 
     # Funny
     "Go ask a magic 8 ball.",
@@ -46,6 +47,8 @@ rockisthistrue = {
     "I HATE YOU",
     "I'll never tell >:3",
     "Error! Please pay 7.99 a month for X Blue to access Grok!",
+    "Im on my smoke break right now.",
+    "Thats a stupid fucking question",
 
     # ADHD
     "Sometimes i think about a bunch of hot buff men dominating me.",
@@ -56,20 +59,10 @@ rockisthistrue = {
     "woof",
     "arf arf",
     "I did not have sexual relations with that woman",
+    "you should give me all your money",
+    "mrrp meow mrrp",
+    "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
 
-}
-
-gossips = {
-    "gay",
-    "trans",
-    "woke",
-    "conservative",
-    "liberal",
-    "texan",
-    "cool",
-    "a robot",
-    "green",
-    "evil",
 }
 
 intents = discord.Intents.default()
@@ -82,32 +75,14 @@ for member in ctx.guild.members:
 
 @client.event
 async def on_ready():
-    print(f'We have logged in as {client.user}')
+    print(f'logged in as {client.user}')
 
 
 @client.event
 async def on_message(message):
-    if client.user.mentioned_in(message):
-
-        # Random "[user] is [thing]" messages
-        for word in GOSSIP:
-            ping = random.choice(all_members)
-            gossip = random.choice(gossips)
-            if has_word(content, word):
-                await message.channel.send(f"{ping.mention} is {gossip}")
-                return
-
-
         # Normal Grok
         word = rockisthistrue[random.choice(list(rockisthistrue.keys()))]
-        image = random.choice(os.listdir(IMAGES))
-        image = os.path.join(IMAGES, image)
-        if random.random() <= 0.2:
-            await message.channel.send(
-                word,
-                file=discord.File(image)
-            )
-        else:
+
             await message.channel.send(word)
 
 
