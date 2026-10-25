@@ -28,8 +28,7 @@ rockisthistrue = {
     "Yeah but that's woke.",
     "Probably",
     "Indubitably",
-    "https://klipy.com/gifs/joe-biden-fact-check", #fact checked by true American patriots (TRUE)
-    "https://tenor.com/view/miku-vocaloid-hatsune-hatsunemiku-mikuhatsune-gif-15486489139135186020", # Ditto, But miku
+
 
     # No
     "No!",
