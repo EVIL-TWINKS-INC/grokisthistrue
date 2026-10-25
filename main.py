@@ -16,6 +16,8 @@ rockisthistrue = {
     "Maybe, I don't know. I kinda like to take things slow.",
     "Who gives a shit?",
     "Ask again later",
+    "purple",
+    "Roll D20 for Grokness check",
 
     # Yes
     "Yes!",
@@ -24,6 +26,8 @@ rockisthistrue = {
     "Yes...?",
     "yuh uh",
     "Yeah but that's woke.",
+    "Probally".
+    "Indubidibly",
 
     # No
     "No!",
