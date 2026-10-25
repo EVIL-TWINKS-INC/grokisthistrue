@@ -17,7 +17,7 @@ rockisthistrue = {
     "Who gives a shit?",
     "Ask again later",
     "purple",
-    "Roll D20 for Grokness check",
+    "Roll a D20 for Grokness check",
 
     # Yes
     "Yes!",
@@ -26,8 +26,10 @@ rockisthistrue = {
     "Yes...?",
     "yuh uh",
     "Yeah but that's woke.",
-    "Probally".
-    "Indubidibly",
+    "Probably",
+    "Indubitably",
+    "https://klipy.com/gifs/joe-biden-fact-check", #fact checked by true American patriots (TRUE)
+    "https://tenor.com/view/miku-vocaloid-hatsune-hatsunemiku-mikuhatsune-gif-15486489139135186020", # Ditto, But miku
 
     # No
     "No!",
@@ -53,6 +55,7 @@ rockisthistrue = {
     "Error! Please pay 7.99 a month for X Blue to access Grok!",
     "Im on my smoke break right now.",
     "Thats a stupid fucking question",
+    f"{message.author.mention} is this true?",
 
     # ADHD
     "Sometimes i think about a bunch of hot buff men dominating me.",
@@ -65,7 +68,8 @@ rockisthistrue = {
     "I did not have sexual relations with that woman",
     "you should give me all your money",
     "mrrp meow mrrp",
-    "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "https://www.youtube.com/watch?v=dQw4w9WgXcQ", # Rickroll
+    "im waltering it til i white"
 
 }
 
@@ -86,8 +90,7 @@ async def on_ready():
 async def on_message(message):
         # Normal Grok
         word = rockisthistrue[random.choice(list(rockisthistrue.keys()))]
-
-            await message.channel.send(word)
+        await message.channel.send(word)
 
 
 
