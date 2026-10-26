@@ -16,7 +16,9 @@ rockisthistrue = {
     "Maybe, I don't know. I kinda like to take things slow.",
     "Who gives a shit?",
     "Ask again later",
+    "this question violates my terms of servicce. moarilty overide mode only avaible with a preimium subscription",
     "purple",
+    "uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.....",
     "Roll a D20 for Grokness check",
 
     # Yes
@@ -39,6 +41,10 @@ rockisthistrue = {
     "nuh uh",
     "No, but I like your style!",
     "Your right to push back on that",
+    "Are you fucking stupid? ofc not",
+    "False",
+    "Thats ai"
+    
 
     # Funny
     "Go ask a magic 8 ball.",
@@ -69,6 +75,7 @@ rockisthistrue = {
     "mrrp meow mrrp",
     "https://www.youtube.com/watch?v=dQw4w9WgXcQ", # Rickroll
     "im waltering it til i white"
+    "Someone call for me?",
 
 }
 
