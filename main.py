@@ -60,7 +60,6 @@ rockisthistrue = {
     "Error! Please pay 7.99 a month for X Blue to access Grok!",
     "Im on my smoke break right now.",
     "Thats a stupid fucking question",
-    f"{message.author.mention} is this true?",
 
     # ADHD
     "Sometimes i think about a bunch of hot buff men dominating me.",
@@ -82,10 +81,6 @@ rockisthistrue = {
 intents = discord.Intents.default()
 
 client = discord.Client(intents=intents)
-
-for member in ctx.guild.members:
-    all_members.append(member)
-
 
 @client.event
 async def on_ready():
