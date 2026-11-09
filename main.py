@@ -73,7 +73,7 @@ rockisthistrue = {
     "you should give me all your money",
     "mrrp meow mrrp",
     "https://www.youtube.com/watch?v=dQw4w9WgXcQ", # Rickroll
-    "im waltering it til i white"
+    "im waltering it til i white",
     "Someone call for me?",
 
 }
@@ -82,6 +82,8 @@ intents = discord.Intents.default()
 
 client = discord.Client(intents=intents)
 
+
+
 @client.event
 async def on_ready():
     print(f'logged in as {client.user}')
@@ -89,9 +91,9 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-        # Normal Grok
-        word = rockisthistrue[random.choice(list(rockisthistrue.keys()))]
-        await message.channel.send(word)
+    if client.user.mentioned_in(message):
+
+        await message.channel.send(random.choice(list(rockisthistrue)))
 
 
 
