@@ -43,7 +43,7 @@ rockisthistrue = {
     "Your right to push back on that",
     "Are you fucking stupid? ofc not",
     "False",
-    "Thats ai"
+    "Thats ai",
     
 
     # Funny
@@ -73,7 +73,7 @@ rockisthistrue = {
     "you should give me all your money",
     "mrrp meow mrrp",
     "https://www.youtube.com/watch?v=dQw4w9WgXcQ", # Rickroll
-    "im waltering it til i white"
+    "im waltering it til i white",
     "Someone call for me?",
 
 }
